@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 14:49:55 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/16 20:36:44 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/16 23:16:30 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ void	*ft_memset(void *s, int c, size_t n)
 /*
 int	main(void)
 {
-	char	s1[] = "send help";
+	char	*s1 = "don't say hello";
 
-	ft_memset(s1, 'a', 8);
+	ft_memset(s1, 'a', 8 * sizeof(int));
 	printf("%s\n", s1);
-	memset(s1, 'a', 8);
+	memset(s1, 'a', 8 * sizeof(int));
 	printf("%s\n", s1);
 	return (0);
 }*/
