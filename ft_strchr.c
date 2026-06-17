@@ -1,0 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/17 22:50:05 by brechied          #+#    #+#             */
+/*   Updated: 2026/06/17 23:26:54 by brechied         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <string.h>
+#include <stdio.h>
+
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s)
+	{
+		if (*s == (char )c)
+			return ((char *)s);
+		s++;
+	}
+	return ((char * )s);
+}
+/*
+int	main(void)
+{
+	char *s;
+	char c;
+
+	s = "Send help";
+	c = 'e';
+	printf("original Function:%s\n", strchr(s, c));
+	printf("mimic:%s\n", ft_strchr(s, c));
+	return (0);
+}*/
