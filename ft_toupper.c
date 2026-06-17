@@ -6,15 +6,23 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 20:00:42 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/17 20:06:34 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/17 22:44:35 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_toupper(int	c)
+int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
-	       c -= 32;
+		c -= 32;
 	return (c);
 }
+/*
+int	main(void)
+{
+	char	c;
+
+	printf("%c\n", ft_toupper(c));
+	return (0);
+}*/

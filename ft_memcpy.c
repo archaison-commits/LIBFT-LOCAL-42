@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 21:52:00 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/17 19:53:23 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/17 22:46:07 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,16 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char *d2;
-	unsigned const char *s2;
+	unsigned char			*d2;
+	unsigned const char		*s2;
 
 	d2 = (unsigned char *)dest;
 	s2 = (unsigned const char *)src;
-
 	while (n > 0)
-		{
-			*(d2++) = *(s2++);
-			n--;
-		}
+	{
+		*(d2++) = *(s2++);
+		n--;
+	}
 	return (dest);
 }
 /*
