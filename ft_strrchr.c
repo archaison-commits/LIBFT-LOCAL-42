@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 23:37:31 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/17 23:45:55 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/22 16:45:36 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char *pos;
+	const char	*pos;
 
 	while (*s)
 	{
