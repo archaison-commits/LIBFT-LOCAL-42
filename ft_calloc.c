@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:22:30 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/25 16:15:58 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/25 16:31:01 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (res);
 }
-
+/*
 int	main(void)
 {
 	//int	ar[5] = {1, 2, 3, 4, 5,};
@@ -67,4 +67,4 @@ int	main(void)
 	}
 	free(array1);
 	return (0);
-}
+}*/
