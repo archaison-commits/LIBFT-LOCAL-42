@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:22:30 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/25 01:15:28 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/25 16:15:58 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	int	*res;
+	void	*res;
+	unsigned char	*ptr;
 	size_t			max_size;
 	size_t			i;
 
@@ -26,15 +27,19 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (size == 0)
 		size = 1; 
 	if (max_size / nmemb < size)
-		return (NULL);
-	res = malloc(nmemb * size);
-	while (res[i])
 	{
-		res[i++] = 0;
+		size = 1;
+		nmemb = 1;
+	}
+	res = malloc(nmemb * size);
+	ptr = (unsigned char *)res;
+	while (ptr[i])
+	{
+		ptr[i++] = 0;
 	}
 	return (res);
 }
-/*
+
 int	main(void)
 {
 	//int	ar[5] = {1, 2, 3, 4, 5,};
@@ -42,12 +47,12 @@ int	main(void)
 	int	*array1;
 	int	i;
 	int	j;
-	int	test;
+	//int	test;
 	
-	test = 10;
+	//test = 10;
 	i = 0;
 	j = 0;
-	array = ft_calloc(2 * test, sizeof(int));
+	array = ft_calloc((size_t) - 1, sizeof(size_t));
 	while (i < 5)
 	{
 		printf("Please work: %d\n", array[i]);
@@ -62,4 +67,4 @@ int	main(void)
 	}
 	free(array1);
 	return (0);
-}*/
+}
