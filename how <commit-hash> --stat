@@ -1,0 +1,81 @@
+[33mcommit 748865b52e481535a21c38776e2303a07aa70e8c[m[33m ([m[1;36mHEAD -> [m[1;32mlibft[m[33m, [m[1;31mlibft/libft[m[33m)[m
+Author: Bruno Rechiedei <brechied@c3r4s3.42warsaw.pl>
+Date:   Mon Jun 29 16:49:15 2026 +0200
+
+    Small fix
+
+[1mdiff --git a/.ft_calloc.c.swo b/.ft_calloc.c.swo[m
+[1mdeleted file mode 100644[m
+[1mindex 870c27f..0000000[m
+Binary files a/.ft_calloc.c.swo and /dev/null differ
+[1mdiff --git a/.ft_strdup.c.swp b/.ft_strdup.c.swp[m
+[1mdeleted file mode 100644[m
+[1mindex 19ec9e7..0000000[m
+Binary files a/.ft_strdup.c.swp and /dev/null differ
+[1mdiff --git a/.ft_substr.c.swp b/.ft_substr.c.swp[m
+[1mdeleted file mode 100644[m
+[1mindex cd6ba0f..0000000[m
+Binary files a/.ft_substr.c.swp and /dev/null differ
+[1mdiff --git a/ft_calloc.c b/ft_calloc.c[m
+[1mindex 8730880..2ee6bac 100644[m
+[1m--- a/ft_calloc.c[m
+[1m+++ b/ft_calloc.c[m
+[36m@@ -6,7 +6,7 @@[m
+ /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */[m
+ /*                                                +#+#+#+#+#+   +#+           */[m
+ /*   Created: 2026/06/24 19:22:30 by brechied          #+#    #+#             */[m
+[31m-/*   Updated: 2026/06/25 16:31:01 by brechied         ###   ########.fr       */[m
+[32m+[m[32m/*   Updated: 2026/06/29 16:45:02 by brechied         ###   ########.fr       */[m
+ /*                                                                            */[m
+ /* ************************************************************************** */[m
+ [m
+[36m@@ -17,19 +17,16 @@[m [mvoid	*ft_calloc(size_t nmemb, size_t size)[m
+ {[m
+ 	void	*res;[m
+ 	unsigned char	*ptr;[m
+[31m-	size_t			max_size;[m
+ 	size_t			i;[m
+ [m
+[31m-	max_size = (size_t) - 1;[m
+ 	i = 0;[m
+         if (nmemb == 0)[m
+ 		nmemb = 1;[m
+ 	if (size == 0)[m
+ 		size = 1; [m
+[31m-	if (max_size / nmemb < size)[m
+[32m+[m	[32mif (SIZE_MAX / nmemb < size)[m
+ 	{[m
+[31m-		size = 1;[m
+[31m-		nmemb = 1;[m
+[32m+[m		[32mreturn (NULL);[m
+ 	}[m
+ 	res = malloc(nmemb * size);[m
+ 	ptr = (unsigned char *)res;[m
+[1mdiff --git a/ft_substr.c b/ft_substr.c[m
+[1mindex 14b8d9a..b54859f 100644[m
+[1m--- a/ft_substr.c[m
+[1m+++ b/ft_substr.c[m
+[36m@@ -6,7 +6,7 @@[m
+ /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */[m
+ /*                                                +#+#+#+#+#+   +#+           */[m
+ /*   Created: 2026/06/25 16:31:40 by brechied          #+#    #+#             */[m
+[31m-/*   Updated: 2026/06/25 19:18:09 by brechied         ###   ########.fr       */[m
+[32m+[m[32m/*   Updated: 2026/06/25 19:21:10 by brechied         ###   ########.fr       */[m
+ /*                                                                            */[m
+ /* ************************************************************************** */[m
+ [m
+[36m@@ -73,7 +73,7 @@[m [mchar	*ft_substr(char const *s, unsigned int start, size_t len)[m
+ 	sub[len] = '\0';[m
+ 	return (sub);[m
+ }[m
+[31m-[m
+[32m+[m[32m/*[m
+ int	main(void)[m
+ {[m
+ 	char	*str = "3342Send Help1223";[m
+[36m@@ -88,4 +88,4 @@[m [mint	main(void)[m
+ 	printf("Substr: %s\n", sub);[m
+ 	free(sub);[m
+ 	return (0);[m
+[31m-}[m
+[32m+[m[32m}*/[m
