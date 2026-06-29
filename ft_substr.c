@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/25 16:31:40 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/25 19:18:09 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/25 19:21:10 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[len] = '\0';
 	return (sub);
 }
-
+/*
 int	main(void)
 {
 	char	*str = "3342Send Help1223";
@@ -88,4 +88,4 @@ int	main(void)
 	printf("Substr: %s\n", sub);
 	free(sub);
 	return (0);
-}
+}*/

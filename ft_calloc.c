@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:22:30 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/25 16:31:01 by brechied         ###   ########.fr       */
+/*   Updated: 2026/06/29 16:45:02 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,16 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*res;
 	unsigned char	*ptr;
-	size_t			max_size;
 	size_t			i;
 
-	max_size = (size_t) - 1;
 	i = 0;
         if (nmemb == 0)
 		nmemb = 1;
 	if (size == 0)
 		size = 1; 
-	if (max_size / nmemb < size)
+	if (SIZE_MAX / nmemb < size)
 	{
-		size = 1;
-		nmemb = 1;
+		return (NULL);
 	}
 	res = malloc(nmemb * size);
 	ptr = (unsigned char *)res;
