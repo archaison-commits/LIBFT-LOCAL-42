@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/23 22:58:45 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/23 23:30:43 by brechied         ###   ########.fr       */
+/*   Updated: 2026/07/01 16:23:30 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,16 @@ char	*ft_strdup(const char *s)
 	int		len;
 	int		i;
 
-	if (*s == 0)
-		return (0);
+	if (!*s)
+		return (NULL);
 	len = 0;
 	while (s[len] != '\0')
 		len++;
 	cs = malloc(len + 1);
+	if (!copy)
+		return (NULL);
 	i = 0;
-	while (s[i] != '\0')
+	while (i < len)
 	{
 		cs[i] = s[i];
 		i++;

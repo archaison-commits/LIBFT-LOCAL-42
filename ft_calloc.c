@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 19:22:30 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/29 17:04:04 by brechied         ###   ########.fr       */
+/*   Created: 2026/07/01 16:44:56 by brechied          #+#    #+#             */
+/*   Updated: 2026/07/01 16:45:47 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,22 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*res;
+	void			*res;
 	unsigned char	*ptr;
 	size_t			i;
 
 	i = 0;
-        if (nmemb == 0)
-		nmemb = 1;
-	if (size == 0)
-		size = 1; 
-	if (SIZE_MAX / nmemb < size)
+	if (size != 0 && nmemb > SIZE_MAX / size)
 	{
-		return (NULL);
+		ptr = NULL;
+		return (ptr);
 	}
 	res = malloc(nmemb * size);
+	if (!res)
+		return (NULL);
 	ptr = (unsigned char *)res;
-	while (ptr[i])
-	{
+	while (i < res)
 		ptr[i++] = 0;
-	}
 	return (res);
 }
 /*

@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 23:32:30 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/25 16:52:10 by brechied         ###   ########.fr       */
+/*   Updated: 2026/07/01 17:39:40 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
+/*
 #include <stdio.h>
 int	main(void)
 {
@@ -69,4 +69,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}
+}*/

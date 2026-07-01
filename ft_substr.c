@@ -6,7 +6,7 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/25 16:31:40 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/25 19:21:10 by brechied         ###   ########.fr       */
+/*   Updated: 2026/07/01 17:53:55 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,27 @@
 #include <string.h>
 #include <stdlib.h>
 
-char    *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-        char    *cs;
-        int             len;
-        int             i;
+	char	*cs;
+	int		len;
+	int		i;
 
-        if (*s == 0)
-                return (0);
-        len = 0;
-        while (s[len] != '\0')
-                len++;
-        cs = malloc(len + 1);
-        i = 0;
-        while (s[i] != '\0')
-        {
-                cs[i] = s[i];
-                i++;
-        }
-        cs[i] = '\0';
-        return (cs);
+	if (*s == 0)
+		return (0);
+	len = 0;
+	while (s[len] != '\0')
+		len++;
+	cs = malloc(len + 1);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		cs[i] = s[i];
+		i++;
+	}
+	cs[i] = '\0';
+	return (cs);
 }
-
 
 int	ft_strlen(char *s)
 {
@@ -52,25 +51,27 @@ int	ft_strlen(char *s)
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*sub;
+	char			*sub;
 	unsigned int	i;
+	size_t			s_len;
 
-	i = 0; 
-	if (start >= ft_strlen((char *)s))
-	{
-		return(ft_strdup(""));
-	}
-	sub = malloc(1 * (len + 1));
-	if (!sub)
-	{
+	if (!s)
 		return (NULL);
-	}
-	while (i < len)
+	s_len = ft_strlen((char *)s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (len > s_len - start)
+		len = s_len - start;
+	sub = malloc(len + 1);
+	if (!sub)
+		return (NULL);
+	i = 0;
+	while (i < len && s[start + i])
 	{
 		sub[i] = s[start + i];
 		i++;
 	}
-	sub[len] = '\0';
+	sub[i] = '\0';
 	return (sub);
 }
 /*
@@ -78,13 +79,13 @@ int	main(void)
 {
 	char	*str = "3342Send Help1223";
 	char	*sub;
-	unsigned int	start;
-	size_t		len;
+	unsigned int start;
+	size_t  len;
 
 	start = 4;
 	len = 9;
-	sub = ft_substr("3342Send Help1223", 4, 9);
-	//printf("Substr: %s\n", ft_substr(str, start, len));
+	sub = ft_substr("3342Send Help1223", 4, 99);
+	printf("Substr: %s\n", ft_substr(str, start, len));
 	printf("Substr: %s\n", sub);
 	free(sub);
 	return (0);
