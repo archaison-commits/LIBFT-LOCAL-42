@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset (copy).c                                 :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/16 14:49:55 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/17 16:03:10 by brechied         ###   ########.fr       */
+/*   Created: 2026/07/01 19:01:43 by brechied          #+#    #+#             */
+/*   Updated: 2026/07/01 19:02:22 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_bzero(void *s, size_t n)
 {
@@ -20,7 +19,7 @@ void	*ft_bzero(void *s, size_t n)
 	a = (unsigned char *)s;
 	while (0 < n)
 	{
-		*(a++) = NULL;
+		*(a++) = 0;
 		n--;
 	}
 	return (s);

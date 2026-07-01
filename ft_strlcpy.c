@@ -10,10 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/types.h>
-#include <bsd/string.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
@@ -34,7 +31,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 			j++;
 		}
 	}
-	dest[j] != '\0';
+	dest[j] = '\0';
 	return (i);
 }
 /*

@@ -6,13 +6,11 @@
 /*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 21:56:13 by brechied          #+#    #+#             */
-/*   Updated: 2026/06/17 22:33:39 by brechied         ###   ########.fr       */
+/*   Updated: 2026/07/01 19:12:11 by brechied         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>*/
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -23,7 +21,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	res = 0;
 	n = 1;
-	while (nptr[i] == ' ' || nptr[i] > 8 && nptr[i] < 14)
+	while (nptr[i] == ' ' || (nptr[i] > 8 && nptr[i] < 14))
 		i++;
 	if (nptr[i] == '-')
 	{

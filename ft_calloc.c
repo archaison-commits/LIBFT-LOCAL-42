@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -20,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			i;
 
 	i = 0;
-	if (size != 0 && nmemb > SIZE_MAX / size)
+	if (size != 0 && nmemb > ((size_t)-1) / size)
 	{
 		ptr = NULL;
 		return (ptr);
@@ -29,7 +28,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (!res)
 		return (NULL);
 	ptr = (unsigned char *)res;
-	while (i < res)
+	while (i < (nmemb * size))
 		ptr[i++] = 0;
 	return (res);
 }
