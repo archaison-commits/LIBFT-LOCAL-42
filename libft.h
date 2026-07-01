@@ -43,5 +43,6 @@ int	ft_toupper(int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlen(const char *s);
+char	**ft_split(char const *s, char c);
 
 #endif
