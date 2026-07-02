@@ -35,7 +35,7 @@ int	mem_all(char **array, int pos, size_t size)
 int	words_cpy(char **array, char const *s, char c)
 {
 	size_t	len;
-	int	i;
+	int		i;
 
 	i = 0;
 	while (*s)
@@ -43,7 +43,7 @@ int	words_cpy(char **array, char const *s, char c)
 		while (*s == c && *s)
 			s++;
 		if (!*s)
-			break;
+			break ;
 		len = 0;
 		while (s[len] != c && s[len])
 			len++;
@@ -90,17 +90,19 @@ char	**ft_split(char const *s, char c)
 	if (!array)
 		return (NULL);
 	array[words] = NULL;
-	if (words_cpy(array, s , c))
+	if (words_cpy(array, s, c))
 		return (NULL);
 	return (array);
 }
 
 int	main(void)
 {
-	char	*s = "Hello send me to the hospital, mate!";
-	char	**a = ft_split(s, ' ');
+	char	*s;
+	char	**a;
 
-	while(*a)
+	s = "Hello send me to the hospital, mate!";
+	a = ft_split(s, ' ');
+	while (*a)
 		printf("%s\n", *a++);
 	return (0);
 }
