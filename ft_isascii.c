@@ -12,17 +12,17 @@
 
 #include "libft.h"
 
-int	ft_asascii(int c)
+int	ft_isascii(int c)
 {
-	if (c < 0 || c > 127)
-		return (0);
-	return (1);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
 /*
 int	main(void)
 {
 	char	a = 'a';
 	int	c = 128;
-	printf("%d\n", ft_asascii(c));
+	printf("%d\n", ft_isascii(c));
 	return (0);
 }*/

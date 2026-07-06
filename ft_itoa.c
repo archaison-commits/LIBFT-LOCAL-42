@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	len_ft(int num)
 {
@@ -58,7 +57,7 @@ char	*ft_itoa(int n)
 	s[len] = num + '0';
 	return (s);
 }
-
+/*
 int	main(void)
 {
 	int	n1;
@@ -78,4 +77,4 @@ int	main(void)
 	printf("4 num: %s\n", ft_itoa(n4));
 	printf("5 num: %s\n", ft_itoa(n5));
 	return (0);
-}
+}*/

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	mem_all(char **array, int pos, size_t size)
 {
@@ -72,7 +71,6 @@ size_t	count_words(char const *s, char c)
 			while (*s != c && *s)
 				s++;
 		}
-		s++;
 	}
 	return (words);
 }
@@ -82,7 +80,7 @@ char	**ft_split(char const *s, char c)
 	char	**array;
 	size_t	words;
 
-	if (!*s)
+	if (!s)
 		return (NULL);
 	words = 0;
 	words = count_words(s, c);
@@ -94,7 +92,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (array);
 }
-
+/*
 int	main(void)
 {
 	char	*s;
@@ -105,4 +103,4 @@ int	main(void)
 	while (*a)
 		printf("%s\n", *a++);
 	return (0);
-}
+}*/

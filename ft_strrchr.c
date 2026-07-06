@@ -11,30 +11,33 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char	*pos;
+	char	*pos;
 
+	pos = NULL;
 	while (*s)
 	{
 		if (*s == (char )c)
-			pos = s;
+			pos = (char *)s;
 		s++;
 	}
 	if (c == 0)
-		return ((char *)s);
-	return ((char *)pos);
+		pos = (char *)s;
+	return (pos);
 }
 /*
-int     main(void)
+int	main(void)
 {
-        char *s;
-        char c;
+	//char *s;
+	char s2[10] = "ltripouiel";
+	char c;
 
-        s = "Send help help now";
-        c = 'e';
-        printf("original Function:%s\n", strrchr(s, c));
-        printf("mimic:%s\n", ft_strrchr(s, c));
-        return (0);
+	//s = "Send help help now";
+	c = 'e';
+	printf("original Function:%d\n", strrchr(s2, 'z') == NULL);
+	printf("mimic:%d\n", ft_strrchr(s2, 'z') == NULL);
+	return (0);
 }*/
