@@ -20,7 +20,8 @@ SRCS = \
 	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 	ft_atoi.c ft_calloc.c ft_strdup.c ft_strtrim.c ft_strjoin.c ft_split.c \
 	ft_itoa.c ft_strmapi.c ft_substr.c ft_striteri.c ft_putchar_fd.c \
-	ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+	ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_lstnew.c \
+	ft_lstadd_front.c
 
 OBJS = $(SRCS:.c=.o)
 
