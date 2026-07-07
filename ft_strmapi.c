@@ -29,7 +29,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	str[i] = '\0';
-	return (0);
+	return (str);
 }
 /*
 char	my_func(unsigned int i, char str)

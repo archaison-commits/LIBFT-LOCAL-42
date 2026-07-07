@@ -21,7 +21,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	d2 = (unsigned char *)dest;
 	s2 = (unsigned const char *)src;
-
 	if (s2 > d2)
 	{
 		while (i < n)
@@ -54,7 +53,7 @@ int	main(void)
 
 	ft_memmove(dest, src, 0);
 //	printf("destination of a string:%ls\n", src+2);
-	
+
 	while (i < 10)
 	{
 		printf("destination: %d\n", dest[i]);

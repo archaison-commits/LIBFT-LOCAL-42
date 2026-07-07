@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -23,7 +24,9 @@ int	ft_atoi(const char *nptr)
 	n = 1;
 	while (nptr[i] == ' ' || (nptr[i] > 8 && nptr[i] < 14))
 		i++;
-	if (nptr[i] == '-')
+	if (nptr[i] == '+')
+		i++;
+	if (nptr[i] == '-' && nptr[i - 1] != '+')
 	{
 		n *= -1;
 		i++;
@@ -38,12 +41,12 @@ int	ft_atoi(const char *nptr)
 /*
 int	main(void)
 {
-	char	n1[] = "    \n \f \r -2134sa4";
+	//char	n1[] = "    \n \f \r -2134sa4";
 	char	n2[] = "";
-	char	n3[] = " -++-1234ab";
-	
-	printf("original function%d\n",atoi(n1));
-	printf("n1:%d\n", ft_atoi(n1));
+	char	n3[] = " -+1";
+
+	printf("original function%d\n" ,atoi(n3));
+	printf("n1:%d\n", ft_atoi(n3));
 	printf("n2:%d\n", ft_atoi(n2));
 	printf("n3:%d\n", atoi(n2));
 	return (0);
