@@ -21,7 +21,7 @@ SRCS = \
 	ft_atoi.c ft_calloc.c ft_strdup.c ft_strtrim.c ft_strjoin.c ft_split.c \
 	ft_itoa.c ft_strmapi.c ft_substr.c ft_striteri.c ft_putchar_fd.c \
 	ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_lstnew.c \
-	ft_lstadd_front.c ft_lstsize.c
+	ft_lstadd_front.c ft_lstsize.c ft_lstlast.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -30,7 +30,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	
+
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
@@ -39,7 +39,7 @@ clean:
 
 fclean: clean
 	rm -rf $(NAME)
-	
-re: fclean all	
+
+re: fclean all
 
 .PHONY: all clean fclean re
