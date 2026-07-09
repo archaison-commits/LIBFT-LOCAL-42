@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -27,7 +26,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	lst1 = ft_lstlast(*lst);
 	lst1->next = new;
 }
-
+/*
 int	main(void)
 {
 	t_list	*head;
@@ -48,4 +47,4 @@ int	main(void)
 		head = head->next;
 	}
 	return (0);
-}
+}*/
