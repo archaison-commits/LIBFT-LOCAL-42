@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	len_ft(int num)
+size_t	len_ft(long num)
 {
 	size_t	len;
 
@@ -40,21 +40,20 @@ char	*ft_itoa(int n)
 	s = malloc(len + 1);
 	if (!s)
 		return (NULL);
+	s[len] = '\0';
 	if (num == 0)
-		s[0] = 0;
+		s[0] = '0';
 	if (num < 0)
 	{
 		s[0] = '-';
 		num = num * (-1);
 	}
-	s[len--] = '\0';
-	while (num > 10)
+	while (num > 0)
 	{
+		len--;
 		s[len] = (num % 10) + '0';
 		num = num / 10;
-		len--;
 	}
-	s[len] = num + '0';
 	return (s);
 }
 /*
