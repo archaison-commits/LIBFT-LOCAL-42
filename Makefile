@@ -26,7 +26,6 @@ SRCS = \
 
 OBJS = $(SRCS:.c=.o)
 
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
