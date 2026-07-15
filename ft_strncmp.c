@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 23:47:08 by brechied          #+#    #+#             */
 /*   Updated: 2026/06/18 00:01:21 by brechied         ###   ########.fr       */

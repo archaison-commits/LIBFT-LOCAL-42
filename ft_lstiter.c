@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/13 17:08:31 by brechied          #+#    #+#             */
 /*   Updated: 2026/07/13 17:08:37 by brechied         ###   ########.fr       */

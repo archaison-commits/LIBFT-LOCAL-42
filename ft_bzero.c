@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/01 19:01:43 by brechied          #+#    #+#             */
 /*   Updated: 2026/07/01 19:02:22 by brechied         ###   ########.fr       */

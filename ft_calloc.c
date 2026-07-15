@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/01 16:44:56 by brechied          #+#    #+#             */
 /*   Updated: 2026/07/01 16:45:47 by brechied         ###   ########.fr       */
@@ -41,7 +41,7 @@ int	main(void)
 	int	i;
 	int	j;
 	//int	test;
-	
+
 	//test = 10;
 	i = 0;
 	j = 0;

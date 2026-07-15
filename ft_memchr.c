@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/22 16:48:46 by brechied          #+#    #+#             */
 /*   Updated: 2026/06/22 17:49:03 by brechied         ###   ########.fr       */

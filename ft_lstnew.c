@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lsnew.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/07 14:51:09 by brechied          #+#    #+#             */
 /*   Updated: 2026/07/07 14:51:12 by brechied         ###   ########.fr       */

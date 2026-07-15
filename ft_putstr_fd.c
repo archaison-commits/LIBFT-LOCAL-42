@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 23:42:16 by brechied          #+#    #+#             */
 /*   Updated: 2026/07/02 23:42:19 by brechied         ###   ########.fr       */
@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
-#include <stdio.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 21:52:00 by brechied          #+#    #+#             */
 /*   Updated: 2026/06/17 22:46:07 by brechied         ###   ########.fr       */
@@ -32,7 +32,7 @@ int	main(void)
 	int	src[20] = {1, 2, 3, 4, 5};;
 	int	dest[20];
 	int	i;
-	
+
 	i = 0;
 	ft_memcpy(src+2, src, sizeof(int) * 10);
 	while (i < 10)

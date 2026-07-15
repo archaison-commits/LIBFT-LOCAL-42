@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brechied <brechied@student.42warsaw.p      +#+  +:+       +#+        */
+/*   By: brechied <brechied@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/06 16:10:06 by brechied          #+#    #+#             */
 /*   Updated: 2026/07/06 16:10:10 by brechied         ###   ########.fr       */
@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
